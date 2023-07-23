@@ -71,17 +71,6 @@ class Page implements TimeStampedInterface
         return $this;
     }
 
-    public function getCretedAt(): ?\DateTimeInterface
-    {
-        return $this->cretedAt;
-    }
-
-    public function setCretedAt(\DateTimeInterface $cretedAt): static
-    {
-        $this->cretedAt = $cretedAt;
-
-        return $this;
-    }
 
     public function getUpdatedAt(): ?\DateTimeInterface
     {
@@ -91,6 +80,18 @@ class Page implements TimeStampedInterface
     public function setUpdatedAt(?\DateTimeInterface $updatedAt): static
     {
         $this->updatedAt = $updatedAt;
+
+        return $this;
+    }
+
+    public function getCreatedAt(): ?\DateTimeInterface
+    {
+        return $this->cretedAt;
+    }
+
+    public function setCreatedAt(\DateTimeInterface $createdAt): static
+    {
+        $this->cretedAt = $createdAt;
 
         return $this;
     }
